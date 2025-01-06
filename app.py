@@ -11,7 +11,7 @@ import json
 import re
 
 app = Flask(__name__)
-app.config.from_object('config.DevConfig')
+app.config.from_object('config.ProdConfig')
 app.secret_key = "secretkey"
 
 # database config
@@ -332,4 +332,4 @@ def delete(repository):
 
 
 if __name__ == "__main__":
-    app.run(debug=True, port=int(os.environ.get('PORT', 10000)), host='0.0.0.0')
+    app.run(port=int(os.environ.get('PORT', 10000)), host='0.0.0.0')

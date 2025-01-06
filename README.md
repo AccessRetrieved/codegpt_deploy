@@ -1,4 +1,4 @@
-# CodeGPT
+# CodeGPT Deploy
 ![til](./static/gif/home.gif)
 
 ## Inspiration 🧠
