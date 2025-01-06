@@ -26,19 +26,16 @@ class CodeBlockVisitor(ast.NodeVisitor):
         self.generic_visit(node)
 
 class CodeT5:
-    def __init__(self):        
+    def __init__(self):
+        # render.com does not offer gpu instances
+        '''
         if torch.backends.mps.is_available():
-            # OVERRIDE FOR FASTER DEV
-            self.device = torch.device('cpu')
-            print('[INFO] Using CPU')
-            
-            '''
             self.device = torch.device('mps')
             print('[INFO] Using MPS')
-            '''
         else:
-            self.device = torch.device('cpu')
-            print('[INFO] Using CPU')
+        '''
+        self.device = torch.device('cpu')
+        print('[INFO] Using CPU')
             
         self.comment_pattern = re.compile(r'''
             ^\s*(
