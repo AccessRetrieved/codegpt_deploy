@@ -1,6 +1,8 @@
 # CodeGPT Deploy
 ![til](./static/gif/home.gif)
 
+**Try it out:** [https://codegpt-deploy.onrender.com](https://codegpt-deploy.onrender.com)
+
 ## Inspiration 🧠
 Whenever developers are looking into contributing to an existing large-scale project, such as an open-source project on GitHub, it can be a pain trying to understand what each file within the repository does, and how it all ties together to complete complex tasks. Therefore, we came up with the idea of developing an application which can conduct line-by-line summarization of code into human language, allowing developers to quickly understand the project and start contributing. This would be particularly helpful for newer developers with less experience in reading code.
 
